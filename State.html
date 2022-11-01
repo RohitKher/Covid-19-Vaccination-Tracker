@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<html>
+<style>
+
+.counties  {
+  fill: #F4F1EE;
+  stroke: black;
+  stroke-width: 0.25px;
+
+}
+
+.outline{
+
+  fill:none;
+  stroke:black;
+  stroke-width: 0.25px;
+}
+
+
+</style>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://d3js.org/d3-format.v2.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<svg width="900" height="500" style="  position: absolute; left: 50px; right: 0px; top: 100px; ;" id="svgUSAState"></svg>
+<svg width="900" height="500" style="  position: absolute; left: 950px; right: 0px; top: 100px; ;" id="svgStateDash"></svg>
+<svg width="1800" height="95" style="  position: absolute; left: 50px; right: 0px; top: 5px; ;" id="svgStateTitle"></svg>
+<svg width="1800" height="1000" style="  position: absolute; left: 50px; right: 0px; top: 600px; ;" id="svgStateprogressbar"></svg>
+<svg width="1800" height="600" style="  position: absolute; left: 50px; right: 0px; top: 1600px; ;" id="svgStatetrend1"></svg>
+<svg width="1800" height="600" style="  position: absolute; left: 50px; right: 0px; top: 2200px; ;" id="svgStatetrend2"></svg>
+<svg width="1800" height="600" style="  position: absolute; left: 50px; right: 0px; top: 2800px; ;" id="svgStatetrend3"></svg>
+<svg width="1800" height="600" style="  position: absolute; left: 50px; right: 0px; top: 3400px; ;" id="svgStateinst"></svg>
+<body>
+
+<h1></h1>
+
+<p></p>
+<script>
+ var State_id = window.location.href.split('=').pop()
+</script>
+<script src="StateTitle.js"></script>
+<script src="StateMap.js"></script>
+<script src="StateDash.js"></script>
+<script src="StateProgress.js"></script>
+<script src="StateTrend1.js"></script>
+<script src="StateTrend2.js"></script>
+<script src="StateTrend3.js"></script>
+<script src="Stateinst.js"></script>
+
+</body>
+</html>
